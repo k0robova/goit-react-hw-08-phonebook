@@ -1,15 +1,10 @@
-// import { useEffect } from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
-
 import { useDispatch, useSelector } from 'react-redux';
 import { selectLoading } from '../redux/contatcs/selectors';
 import { fetchContactsAction } from '../redux/contatcs/operations';
 
 import { useEffect } from 'react';
 import { ContactsList } from 'components/ContactsList/ContactsList';
-
-// import { fetchTasks } from 'redux/tasks/operations';
-// import { selectLoading } from 'redux/tasks/selectors';
+import { Form } from 'components/Form/Form';
 
 export default function ContactsPage() {
   const dispatch = useDispatch();
@@ -24,6 +19,7 @@ export default function ContactsPage() {
       <h1>Your contacts</h1>
 
       <div>{isLoading && 'Request in progress...'}</div>
+      <Form />
       <ContactsList />
     </>
   );
