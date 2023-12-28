@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import css from './Form.module.css';
-import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { getContacts } from '../../redux/contatcs/selectors';
 import { addContactAction } from '../../redux/contatcs/operations';
@@ -53,7 +52,7 @@ export function Form() {
   return (
     <form onSubmit={handleFormSubmit} className={css.main_form}>
       <label>
-        Name
+        Name:
         <input
           type="text"
           name="name"
@@ -62,7 +61,7 @@ export function Form() {
         />
       </label>
       <label>
-        number
+        Number:
         <input
           type="tel"
           name="number"
