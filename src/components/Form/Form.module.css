@@ -1,4 +1,4 @@
-.main_form {
+/* .main_form {
   max-width: 400px;
   margin: 20px;
   padding: 20px;
@@ -29,4 +29,79 @@ input {
 
 .btn_submit:hover {
   background-color: #45a049;
+} */
+
+/* Ваші останні стилі */
+
+/* Основний контейнер форми */
+.main_form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f7f1e3;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: #816c5b;
+}
+
+/* Стилі для заголовків */
+.main_form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #9d8f7f;
+}
+
+/* Стилі для полів введення та елементів label */
+.main_form input,
+.main_form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.main_form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #26221e;
+}
+
+/* Стилі для полів введення */
+.main_form input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #d8b48b;
+  border-radius: 5px;
+  background-color: #f4e1c2;
+  color: #816c5b;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Змінює колір обводки та фону при фокусуванні на полі введення */
+.main_form input:focus {
+  border-color: #b5916f;
+  background-color: #e2d4ba;
+}
+
+/* Стилі для кнопки */
+.main_form button {
+  background-color: #b5916f;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Змінює колір кнопки при наведенні курсору */
+.main_form button:hover {
+  background-color: #8f7254;
+}
+
+/* Змінює колір кнопки при активізації (натисканні) */
+.main_form button:active {
+  background-color: #725641;
 }

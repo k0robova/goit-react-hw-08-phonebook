@@ -20,22 +20,34 @@ export const RegisterForm = () => {
 
   return (
     <>
-      <h1>Page of registration</h1>
+      <h2 className={css.register_title}>
+        Welcome! Before using you need to create a account:
+      </h2>
 
-      <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
-        <label className={css.label}>
+      <form
+        className={css.register_form}
+        onSubmit={handleSubmit}
+        autoComplete="off"
+      >
+        <label className={css.register_label}>
           Username
-          <input type="text" name="name" />
+          <input type="text" name="name" className={css.register_input} />
         </label>
-        <label className={css.label}>
+        <label className={css.register_label}>
           Email
-          <input type="email" name="email" />
+          <input type="email" name="email" className={css.register_input} />
         </label>
-        <label className={css.label}>
+        <label className={css.register_label}>
           Password
-          <input type="password" name="password" />
+          <input
+            type="password"
+            name="password"
+            className={css.register_input}
+          />
         </label>
-        <button type="submit">Register</button>
+        <button type="submit" className={css.register_button}>
+          Register
+        </button>
       </form>
     </>
   );

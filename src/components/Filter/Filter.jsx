@@ -11,8 +11,8 @@ export const Filter = () => {
   };
 
   return (
-    <div>
-      <h3>Find contacts by name</h3>
+    <div className={css.searchContainer}>
+      <h3>Find contacts by name:</h3>
       <input
         type="text"
         name="contact_name"

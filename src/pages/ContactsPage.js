@@ -8,6 +8,7 @@ import { Form } from 'components/Form/Form';
 import { Filter } from 'components/Filter/Filter';
 import { ContactsList } from 'components/ContactsList/ContactsList';
 import { Loader } from 'components/Loader/Loader';
+import css from './ContactsPage.module.css';
 
 export default function ContactsPage() {
   const dispatch = useDispatch();
@@ -28,10 +29,10 @@ export default function ContactsPage() {
     //   <ContactsList />
     // </>
     <div>
-      <h1>Phonebook</h1>
+      <h2 className={css.title_contacts_page}>Try to save your contacts!</h2>
       <Form />
 
-      <h2>Contacts</h2>
+      <h1 className={css.title_main_contacts}>Your list of contacts</h1>
       <Filter />
 
       {isLoading ? (
@@ -39,7 +40,7 @@ export default function ContactsPage() {
       ) : contacts.length > 0 ? (
         <ContactsList />
       ) : (
-        <p>No contacts added yet! </p>
+        <p className={css.nocontacts_title}>No contacts added yet! </p>
       )}
     </div>
   );

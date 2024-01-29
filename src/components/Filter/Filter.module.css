@@ -1,4 +1,4 @@
-.input_find {
+/* .input_find {
   margin: 10px 30px 30px 30px;
   width: 400px;
   padding: 8px;
@@ -7,5 +7,39 @@
   box-sizing: border-box;
 }
 h3 {
-  margin-left: 30px;
+  text-align: center;
+} */
+/* Ваші останні стилі */
+
+/* Стилі для контейнера з полем введення */
+.searchContainer {
+  text-align: center; /* Вирівнює текст та елементи по центру */
+}
+
+/* Стилі для тексту заголовка */
+.searchContainer h3 {
+  font-size: 18px;
+  color: #47423d;
+  margin-bottom: 10px;
+}
+
+/* Стилі для поля введення пошуку */
+.input_find {
+  width: 100%;
+  max-width: 430px; /* Просто приклад ширини, можна змінити на ваш вибір */
+  margin: 0 auto; /* Змінює ширину, але це зробить його центральним */
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #d8b48b;
+  border-radius: 5px;
+  background-color: #f4e1c2;
+  color: #010101;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Змінює колір обводки та фону при фокусуванні на полі введення */
+.input_find:focus {
+  border-color: #b5916f;
+  background-color: #e2d4ba;
 }

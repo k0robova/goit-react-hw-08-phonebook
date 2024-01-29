@@ -14,7 +14,7 @@ export const ContactElement = ({ id, name, number }) => {
   return (
     <li className={css.contact_item}>
       <p>
-        {name}: {number}
+        {name}: <span>{number}</span>
       </p>
       <button
         type="button"

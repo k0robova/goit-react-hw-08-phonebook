@@ -1,4 +1,4 @@
-.contact_item {
+/* .contact_item {
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -19,4 +19,52 @@
 }
 .btn_delete:hover {
   background-color: rgb(205, 43, 43);
+} */
+
+/* Ваші останні стилі */
+
+/* Стилі для елемента li */
+.contact_item {
+  display: flex;
+  justify-content: space-between; /* Це вирівнює по центру по горизонталі */
+  align-items: center; /* Вирівнює по центру по вертикалі */
+  text-align: center; /* Вирівнює текст усередині по центру */
+  margin-bottom: 20px; /* Додав маржу для відокремлення елементів */
+  gap: 10px;
+  width: 400px;
+  row-gap: 50px;
+  margin: auto;
+}
+
+/* Стилі для тексту в елементі li */
+.contact_item p {
+  font-size: 16px;
+  color: #39322c;
+  margin-right: 5px; /* Додав відступ справа для відокремлення тексту від кнопки */
+}
+
+/* Стилі для кнопки в елементі li */
+.contact_item button {
+  background-color: #b5916f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Змінює колір кнопки при наведенні курсору */
+.contact_item button:hover {
+  background-color: #8f7254;
+}
+
+/* Змінює колір кнопки при активізації (натисканні) */
+.contact_item button:active {
+  background-color: #725641;
+}
+
+.contact_item span {
+  color: red;
 }

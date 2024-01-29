@@ -1,0 +1,13 @@
+.container_homepage {
+  color: rgb(28, 25, 25);
+  position: absolute;
+  top: 40%; /* Встановлює верхню позицію на 40% від вертикального краю */
+  left: 50%; /* Встановлює горизонтальну позицію на середину */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container_homepage h1 {
+  color: black;
+  text-align: center;
+}
