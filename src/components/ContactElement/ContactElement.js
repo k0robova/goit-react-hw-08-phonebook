@@ -9,6 +9,7 @@ export const ContactElement = ({ id, name, number }) => {
 
   const onDeleteContact = idEl => {
     dispatch(deleteContactAction(idEl));
+    // console.log(idEl);
   };
 
   return (

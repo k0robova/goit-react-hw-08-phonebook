@@ -40,7 +40,7 @@ export const contactsSlice = createSlice({
         state.isLoading = false;
         state.error = null;
         state.contacts = state.contacts.filter(
-          contact => contact.id !== action.payload.id
+          contact => contact._id !== action.payload
         );
       })
       .addMatcher(action => action.type.endsWith('pending'), handlePending)

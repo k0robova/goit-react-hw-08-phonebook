@@ -17,9 +17,11 @@ export const ContactsList = () => {
 
   return (
     <ul>
-      {visibleFilteredContacts.map(({ id, name, number }) => (
-        <ContactElement key={id} id={id} name={name} number={number} />
-      ))}
+      {visibleFilteredContacts.map(({ _id, name, number }) => {
+        return (
+          <ContactElement key={_id} id={_id} name={name} number={number} />
+        );
+      })}
     </ul>
   );
 };
